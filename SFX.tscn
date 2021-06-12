@@ -1,0 +1,46 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Assets/Audio/dead.wav" type="AudioStream" id=1]
+[ext_resource path="res://Assets/Audio/Powerup.wav" type="AudioStream" id=2]
+[ext_resource path="res://Assets/Audio/Hit_Hurt2.wav" type="AudioStream" id=3]
+[ext_resource path="res://Assets/Audio/victory.wav" type="AudioStream" id=4]
+[ext_resource path="res://SFX.gd" type="Script" id=5]
+[ext_resource path="res://Assets/Audio/Pickup_Coin15.wav" type="AudioStream" id=6]
+[ext_resource path="res://Assets/Audio/Blip_Select45.wav" type="AudioStream" id=7]
+
+[node name="SFX" type="Node"]
+pause_mode = 2
+script = ExtResource( 5 )
+
+[node name="hurtsound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+volume_db = -25.0
+bus = "Effects"
+
+[node name="jumpsound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 2 )
+volume_db = -27.0
+bus = "Effects"
+
+[node name="deadsound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )
+volume_db = -22.0
+pitch_scale = 0.7
+bus = "Effects"
+
+[node name="victory" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+volume_db = -22.0
+pitch_scale = 0.85
+bus = "Effects"
+
+[node name="coin" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+volume_db = -24.0
+pitch_scale = 1.2
+bus = "Effects"
+
+[node name="selection" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+volume_db = -24.0
+pitch_scale = 1.2

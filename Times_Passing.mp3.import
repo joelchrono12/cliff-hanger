@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Times_Passing.mp3-6076af29813c2fc4c77f518225b6de67.mp3str"
+
+[deps]
+
+source_file="res://Times_Passing.mp3"
+dest_files=[ "res://.import/Times_Passing.mp3-6076af29813c2fc4c77f518225b6de67.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

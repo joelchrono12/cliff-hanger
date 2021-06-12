@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Platforms.png" type="Texture" id=1]
+[ext_resource path="res://MovingPlatform.gd" type="Script" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 36, 12 )
+
+[sub_resource type="OccluderPolygon2D" id=2]
+polygon = PoolVector2Array( -31.4872, -11.7967, -25.0628, -9.11975, -18.5077, -11.9291, -11.9526, -9.40068, -7.45765, -11.8354, -2.40086, -9.77526, 0.127533, -11.8354, 3.49873, -10.1498, 8.27457, -12.21, 11.5521, -10.899, 19.5119, -12.0227, 23.7259, -9.40068, 30.7562, -11.7966, 35.5238, -6.69799, 34.3981, 7.20746, 30.69, 11.5777, 25.5913, 8.66422, 19.1684, 12.3061, 13.1427, 9.39261, 8.44129, 11.5115, 0.362885, 9.85612, -4.93443, 11.7102, -11.0926, 9.39261, -15.9264, 11.4453, -25.5277, 8.99531, -31.6197, 11.7102, -34.7318, 7.93584, -35.3278, 0.0560894, -35.7524, -6.82263 )
+
+[node name="MovingPlatform" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Platform" type="KinematicBody2D" parent="." groups=[
+"moving",
+]]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform"]
+shape = SubResource( 1 )
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Platform"]
+occluder = SubResource( 2 )
+
+[node name="icon" type="Sprite" parent="Platform"]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 72, 24 )
+
+[node name="MoveTween" type="Tween" parent="."]
+repeat = true
+playback/repeat = true
