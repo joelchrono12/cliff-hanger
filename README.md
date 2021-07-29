@@ -9,7 +9,7 @@ For some reason tho, time doesnt seem to keep going when you grab on ledges and 
 Make sure to collect all of those shiny diamond thingies, they surely are important for you, I assure you!
 
 
-# Controls:
+## Controls:
 
 SPACE  to pause
 
