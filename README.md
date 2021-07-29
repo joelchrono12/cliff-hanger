@@ -25,4 +25,5 @@ Z/J = Jumping
 Grab to ledges to stop time
 
 ## Screnshots
-![Gameplay Screenshot](https://user-images.githubusercontent.com/18448587/127559667-8bf6a8f6-e1dc-4c13-b7c6-cb7dd13abbe8.png)
+![Gameplay Screenshot 1](https://user-images.githubusercontent.com/18448587/127559667-8bf6a8f6-e1dc-4c13-b7c6-cb7dd13abbe8.png)
+![Gameplay Screenshot 2](https://user-images.githubusercontent.com/18448587/127560037-abcb861d-5576-4692-b25a-a624f9169279.png)
