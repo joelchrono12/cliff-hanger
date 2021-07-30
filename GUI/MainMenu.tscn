@@ -418,6 +418,7 @@ anims/music = SubResource( 2 )
 anims/play = SubResource( 3 )
 anims/quit = SubResource( 4 )
 anims/sound = SubResource( 5 )
+
 [connection signal="mouse_entered" from="MarginContainer/VBoxContainer/MarginContainer/VBoxContainer/HBoxContainer2/Play" to="." method="_on_Play_mouse_entered"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/MarginContainer/VBoxContainer/HBoxContainer2/Play" to="." method="_on_Play_pressed"]
 [connection signal="mouse_entered" from="MarginContainer/VBoxContainer/MarginContainer/VBoxContainer/HBoxContainer2/Quit" to="." method="_on_Quit_mouse_entered"]
